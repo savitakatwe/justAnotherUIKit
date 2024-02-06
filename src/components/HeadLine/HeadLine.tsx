@@ -1,6 +1,13 @@
 import Typography from "../Typography/Typography";
 import styled from "styled-components";
 import Button from "../Button/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRightLong,
+  faGear,
+  faMessage,
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -33,8 +40,19 @@ const HeadLine = () => {
           Our boilerplates works with it out-of-the-box.
         </Typography>
         <StyledDisplay>
-          <Button variant={"primary"}>Get started</Button>
-          <Button variant={"secondary"}>See repo</Button>
+          <Button variant={"primary"}>
+            Get started
+            <FontAwesomeIcon icon={faArrowRightLong}></FontAwesomeIcon>
+          </Button>
+          <Button variant={"secondary"}>
+            See repo
+            <img
+              src={"./github.svg"}
+              alt={"github"}
+              height={"20px"}
+              width={"20px"}
+            />
+          </Button>
         </StyledDisplay>
       </StyledDiv>
     </>

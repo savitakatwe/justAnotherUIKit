@@ -14,6 +14,8 @@ const StyledColumn = styled.div`
 const StyledColum2 = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
 `;
 const StyledColumn1 = styled.div`
   display: flex;
@@ -108,6 +110,12 @@ const Footer = () => {
         </StyledColumn1>
       </StyledFooter>
       <StyledColum2>
+        <img
+          src={"./copyright.svg"}
+          alt={"copyright"}
+          height={"20px"}
+          width={"20px"}
+        />
         <Typography variant={"title2"} color={"white"} fontWeight={"200px"}>
           2024
         </Typography>

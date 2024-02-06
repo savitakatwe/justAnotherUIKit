@@ -13,6 +13,9 @@ const StyledButton = styled.button<{
   border-radius: 3px;
   border: ${(props) => props.border};
   font-size: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 `;
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
