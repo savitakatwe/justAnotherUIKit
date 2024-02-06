@@ -27,7 +27,7 @@ const StyledDisplay = styled.div`
 const HeadLine = () => {
   return (
     <>
-      <StyledDiv>
+      <StyledDiv id={"home"}>
         <Typography variant={"headLine"} color={"white"}>
           It doesn’t matter what
           <Typography variant={"headLine"} color={"#FFFF00"} as={"span"}>

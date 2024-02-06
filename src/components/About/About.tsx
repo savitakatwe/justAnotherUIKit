@@ -2,7 +2,7 @@ import Typography from "../Typography/Typography";
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
-  padding: 0px 70px;
+  padding: 20px 70px;
   height: 100vh;
   display: flex;
   gap: 15px;
@@ -11,7 +11,7 @@ const StyledDiv = styled.div`
 const About = () => {
   return (
     <>
-      <StyledDiv>
+      <StyledDiv id={"about"}>
         <Typography variant={"head"} color={"white"}>
           About
         </Typography>

@@ -4,7 +4,7 @@ import TextBox from "../TextBox/TextBox";
 import Button from "../Button/Button";
 
 const StyledDiv = styled.div`
-  padding: 0px 70px;
+  padding: 20px 70px;
 
   min-height: 100vh;
 `;
@@ -24,7 +24,7 @@ const StyledName = styled.div`
 const Contact = () => {
   return (
     <>
-      <StyledDiv>
+      <StyledDiv id={"contact"}>
         <Typography variant={"head"} color={"white"}>
           Contact
         </Typography>

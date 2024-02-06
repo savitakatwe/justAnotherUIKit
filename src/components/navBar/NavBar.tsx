@@ -12,6 +12,9 @@ const StyledNavItem = styled.ul`
   //justify-content: center;
   gap: 20px;
 `;
+const StyledAnchor = styled.a`
+  text-decoration: none;
+`;
 
 const NavBar = () => {
   return (
@@ -22,24 +25,32 @@ const NavBar = () => {
         </Typography>
         <StyledNavItem>
           <li>
-            <Typography variant={"body"} color={"white"}>
-              Home
-            </Typography>
+            <StyledAnchor href="#home">
+              <Typography variant={"body"} color={"white"}>
+                Home
+              </Typography>
+            </StyledAnchor>
           </li>
           <li>
-            <Typography variant={"body"} color={"white"}>
-              About
-            </Typography>
+            <StyledAnchor href="#about">
+              <Typography variant={"body"} color={"white"}>
+                About
+              </Typography>
+            </StyledAnchor>
           </li>
           <li>
-            <Typography variant={"body"} color={"white"}>
-              Contact
-            </Typography>
+            <StyledAnchor href="#contact">
+              <Typography variant={"body"} color={"white"}>
+                Contact
+              </Typography>
+            </StyledAnchor>
           </li>
           <li>
-            <Typography variant={"body"} color={"white"}>
-              Blog
-            </Typography>
+            <StyledAnchor href="#blog">
+              <Typography variant={"body"} color={"white"}>
+                Blog
+              </Typography>
+            </StyledAnchor>
           </li>
         </StyledNavItem>
       </StyledNav>
