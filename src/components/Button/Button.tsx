@@ -13,11 +13,10 @@ const StyledButton = styled.button<{
   border-radius: 3px;
   border: ${(props) => props.border};
   font-size: 16px;
-  //font-weight: 700;
 `;
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant: "primary" | "secondary" | "transparent";
+  variant: "primary" | "secondary" | "transparent" | "blue";
 }
 const Button = ({
   variant,
@@ -28,6 +27,7 @@ const Button = ({
     switch (variant) {
       case "primary":
         return { color: "#FFFF00", textColor: "black", border: "none" };
+
       case "secondary":
         return {
           color: "black",
@@ -36,6 +36,8 @@ const Button = ({
         };
       case "transparent":
         return { color: "white", textColor: "black", border: "none" };
+      case "blue":
+        return { color: "#91D2F7", textColor: "black", border: "none" };
     }
   }, [variant]);
 
