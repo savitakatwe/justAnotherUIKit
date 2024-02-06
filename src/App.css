@@ -3,3 +3,8 @@ body{
   overflow: auto;
 }
 
+
+p{
+  padding: 0;
+  margin: 0;
+}

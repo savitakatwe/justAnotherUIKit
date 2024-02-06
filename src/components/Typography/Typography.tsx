@@ -21,11 +21,13 @@ interface ITypographyProps extends ParamHTMLAttributes<HTMLParagraphElement> {
     | "body"
     | "small";
   color: string;
+  as?: string;
 }
 const Typography = ({
   variant,
   children,
   color,
+  as,
   ...otherProps
 }: PropsWithChildren<ITypographyProps>) => {
   const typo = useMemo(() => {
@@ -48,7 +50,7 @@ const Typography = ({
   }, [variant]);
 
   return (
-    <StyledTypography size={typo.size} color={color} {...otherProps}>
+    <StyledTypography as={as} size={typo.size} color={color} {...otherProps}>
       {children}
     </StyledTypography>
   );

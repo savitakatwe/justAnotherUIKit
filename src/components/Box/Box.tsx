@@ -3,13 +3,12 @@ import { PropsWithChildren } from "react";
 import styled from "styled-components";
 
 const StyledBox = styled.div`
-  border: 1px solid;
   background-color: #d9d9d9;
-  justify-content: center;
-  display: flex;
   height: 74px;
-  width: 199px;
+  width: 20%;
+  display: flex;
   align-items: center;
+  justify-content: center;
 `;
 const Box = (props: PropsWithChildren) => {
   return (

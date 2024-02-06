@@ -10,6 +10,15 @@ import Contact from "./components/Contact/Contact";
 const StyledContainer = styled.div`
   //margin: 0;
 `;
+const Styledfooter = styled.footer`
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+`;
+
 function App() {
   return (
     <StyledContainer>
@@ -18,6 +27,7 @@ function App() {
       <Supported />
       <About />
       <Contact />
+      <Styledfooter>2024</Styledfooter>
     </StyledContainer>
   );
 }

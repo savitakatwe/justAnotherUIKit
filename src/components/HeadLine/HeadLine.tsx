@@ -8,6 +8,11 @@ const StyledDiv = styled.div`
   align-items: center;
   line-height: 61px;
   //font-weight: 700;
+  height: calc(100vh - 70px);
+  max-width: 770px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
 `;
 const StyledDisplay = styled.div`
   display: flex;
@@ -18,10 +23,12 @@ const HeadLine = () => {
     <>
       <StyledDiv>
         <Typography variant={"headLine"} color={"white"}>
-          It doesn’t matter what JS
-        </Typography>
-        <Typography variant={"headLine"} color={"white"}>
-          Framework you work with.
+          It doesn’t matter what
+          <Typography variant={"headLine"} color={"#FFFF00"} as={"span"}>
+            {" "}
+            JS Framework{" "}
+          </Typography>
+          you work with.
         </Typography>
         <Typography variant={"title2"} color={"white"}>
           Our boilerplates works with it out-of-the-box.

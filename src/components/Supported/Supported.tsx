@@ -8,11 +8,14 @@ const StyledContainer = styled.div`
   flex-direction: column;
   //font-weight: 700;
   align-items: center;
+  height: 100vh;
 `;
 const StyledBox = styled.div`
   display: flex;
   justify-content: center;
   gap: 20px;
+  max-width: 853px;
+  flex-wrap: wrap;
 `;
 
 const BoxArrayElements: string[] = [
