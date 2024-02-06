@@ -13,7 +13,7 @@ const StyledButton = styled.button<{
   border-radius: 3px;
   border: ${(props) => props.border};
   font-size: 16px;
-  font-weight: 700;
+  //font-weight: 700;
 `;
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
