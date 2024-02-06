@@ -9,6 +9,7 @@ const StyledBox = styled.div`
   display: flex;
   height: 74px;
   width: 199px;
+  align-items: center;
 `;
 const Box = (props: PropsWithChildren) => {
   return (

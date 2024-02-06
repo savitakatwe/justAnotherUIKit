@@ -5,7 +5,9 @@ import Box from "../Box/Box";
 const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
+  flex-direction: column;
   //font-weight: 700;
+  align-items: center;
 `;
 const StyledBox = styled.div`
   display: flex;
@@ -15,13 +17,13 @@ const StyledBox = styled.div`
 
 const BoxArrayElements: string[] = [
   "Lorem",
-  "ipsum",
-  "dolor",
-  "sit",
-  "dolor",
-  "sit",
+  "Ipsum",
+  "Dolor",
+  "Sit",
+  "Dolor",
+  "Sit",
   "Lorem",
-  "ipsum",
+  "Ipsum",
 ];
 const Supported = () => {
   return (
@@ -35,6 +37,7 @@ const Supported = () => {
             return <Box>{item}</Box>;
           })}
         </StyledBox>
+
         <Typography variant={"title1"} color={"white"}>
           Less code. More product.
         </Typography>
