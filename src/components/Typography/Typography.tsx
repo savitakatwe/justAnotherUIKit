@@ -6,10 +6,11 @@ import styled from "styled-components";
 const StyledTypography = styled.p<{
   size: string;
   color: string;
+  fontWeight?: string;
 }>`
   font-size: ${(props) => props.size};
   color: ${(props) => props.color};
-  font-weight: 700;
+  font-weight: ${(props) => props.fontWeight || 700};
 `;
 interface ITypographyProps extends ParamHTMLAttributes<HTMLParagraphElement> {
   variant:
@@ -22,11 +23,13 @@ interface ITypographyProps extends ParamHTMLAttributes<HTMLParagraphElement> {
     | "small";
   color: string;
   as?: string;
+  fontWeight?: string;
 }
 const Typography = ({
   variant,
   children,
   color,
+  fontWeight,
   as,
   ...otherProps
 }: PropsWithChildren<ITypographyProps>) => {
@@ -39,7 +42,7 @@ const Typography = ({
       case "title1":
         return { size: "32px" };
       case "title2":
-        return { size: "18px" };
+        return { size: "20px" };
       case "title3":
         return { size: "24px" };
       case "body":
@@ -50,7 +53,13 @@ const Typography = ({
   }, [variant]);
 
   return (
-    <StyledTypography as={as} size={typo.size} color={color} {...otherProps}>
+    <StyledTypography
+      as={as}
+      size={typo.size}
+      color={color}
+      fontWeight={fontWeight}
+      {...otherProps}
+    >
       {children}
     </StyledTypography>
   );

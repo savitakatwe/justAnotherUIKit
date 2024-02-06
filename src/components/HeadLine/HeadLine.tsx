@@ -29,7 +29,7 @@ const HeadLine = () => {
           </Typography>
           you work with.
         </Typography>
-        <Typography variant={"title2"} color={"white"}>
+        <Typography variant={"title3"} color={"white"}>
           Our boilerplates works with it out-of-the-box.
         </Typography>
         <StyledDisplay>

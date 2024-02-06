@@ -6,6 +6,7 @@ import HeadLine from "./components/HeadLine/HeadLine";
 import Supported from "./components/Supported/Supported";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const StyledContainer = styled.div`
   //margin: 0;
@@ -27,7 +28,7 @@ function App() {
       <Supported />
       <About />
       <Contact />
-      <Styledfooter>2024</Styledfooter>
+      <Footer />
     </StyledContainer>
   );
 }
