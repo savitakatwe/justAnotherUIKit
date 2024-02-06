@@ -12,7 +12,14 @@ const StyledTypography = styled.p<{
   font-weight: 700;
 `;
 interface ITypographyProps extends ParamHTMLAttributes<HTMLParagraphElement> {
-  variant: "headLine" | "title1" | "title2" | "title3" | "body" | "small";
+  variant:
+    | "headLine"
+    | "head"
+    | "title1"
+    | "title2"
+    | "title3"
+    | "body"
+    | "small";
   color: string;
 }
 const Typography = ({
@@ -25,6 +32,8 @@ const Typography = ({
     switch (variant) {
       case "headLine":
         return { size: "50px" };
+      case "head":
+        return { size: "40px" };
       case "title1":
         return { size: "32px" };
       case "title2":
