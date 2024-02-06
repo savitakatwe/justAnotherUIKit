@@ -9,15 +9,9 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 const StyledContainer = styled.div`
-  //margin: 0;
-`;
-const Styledfooter = styled.footer`
-  color: white;
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  font-size: 20px;
-  font-weight: 300;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
 `;
 
 function App() {

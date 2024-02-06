@@ -9,7 +9,6 @@ const StyledNav = styled.nav`
 `;
 const StyledNavItem = styled.ul`
   display: flex;
-  //justify-content: center;
   gap: 20px;
 `;
 const StyledAnchor = styled.a`
