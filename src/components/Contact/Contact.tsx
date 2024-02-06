@@ -5,6 +5,8 @@ import Button from "../Button/Button";
 
 const StyledDiv = styled.div`
   padding: 0px 70px;
+
+  height: 100vh;
 `;
 const StyledForm = styled.div`
   display: flex;

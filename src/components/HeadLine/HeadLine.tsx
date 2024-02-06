@@ -7,7 +7,6 @@ const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   line-height: 61px;
-  //font-weight: 700;
   height: calc(100vh - 70px);
   max-width: 770px;
   margin: auto;

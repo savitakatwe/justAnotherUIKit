@@ -3,6 +3,10 @@ import styled from "styled-components";
 
 const StyledDiv = styled.div`
   padding: 0px 70px;
+  height: 100vh;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
 `;
 const About = () => {
   return (
