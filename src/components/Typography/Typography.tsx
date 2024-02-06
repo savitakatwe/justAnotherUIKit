@@ -11,7 +11,7 @@ const StyledTypography = styled.p<{
   color: ${(props) => props.color};
 `;
 interface ITypographyProps extends ParamHTMLAttributes<HTMLParagraphElement> {
-  variant: "headLine" | "title1" | "title2" | "body" | "small";
+  variant: "headLine" | "title1" | "title2" | "title3" | "body" | "small";
   color: string;
 }
 const Typography = ({
@@ -28,6 +28,8 @@ const Typography = ({
         return { size: "20px" };
       case "title2":
         return { size: "18px" };
+      case "title3":
+        return { size: "24px" };
       case "body":
         return { size: "14px" };
       case "small":
