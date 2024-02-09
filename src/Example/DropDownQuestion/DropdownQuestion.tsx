@@ -13,7 +13,6 @@ const DropdownQuestion = () => {
     <>
       <select
         onChange={(e) => {
-          console.log(e.target.value as unknown as number);
           setIndex(e.target.value as unknown as number);
         }}
       >

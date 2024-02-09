@@ -7,8 +7,6 @@ import Supported from "./components/Supported/Supported";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import DropdownQuestion from "./Example/DropDownQuestion/DropdownQuestion";
-import DeleteList from "./Example/DeleteList/DeleteList";
 
 const StyledContainer = styled.div`
   overflow-y: scroll;
@@ -20,7 +18,6 @@ function App() {
   return (
     <StyledContainer>
       <NavBar />
-      <DeleteList />
       <HeadLine />
       <Supported />
       <About />
